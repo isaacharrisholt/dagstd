@@ -1,0 +1,12 @@
+exclude: ^tests/
+repos:
+  - repo: https://github.com/PyCQA/pylint
+    rev: v2.13.9
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        args:
+          - '--rcfile=.pylintrc'
+          - '--output-format=colorized'
