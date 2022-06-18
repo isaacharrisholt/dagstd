@@ -1,6 +1,6 @@
-from dagstd.operations import *
-
 import pytest
+
+from dagstd.operations import *
 
 
 def test_fmt():
