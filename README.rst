@@ -27,7 +27,6 @@ extracts a known file name. Note: the ``download_large_file`` op has been
 omitted for brevity.
 
 .. code-block:: python
-    :linenos:
 
     import zipfile
 
@@ -79,7 +78,6 @@ omitted for brevity.
 And here's the same graph, but with Dagstd ops.
 
 .. code-block:: python
-    :linenos:
 
     import zipfile
 
