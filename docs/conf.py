@@ -32,6 +32,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx.ext.coverage',
+    'dagstd.sphinx.parser'
 ]
 
 napoleon_google_docstring = False

@@ -17,6 +17,7 @@ Features
 - Constant value ops
 - Helper ops for mathematical and string operations
 - Ops for retrieving environment variables
+- Sphinx autodoc support for Dagster ops
 
 Usage
 -----
@@ -114,6 +115,27 @@ And here's the same graph, but with Dagstd ops.
 
 This was just a small example, but it serves to show how much boilerplate can
 be avoided when using Dagstd.
+
+Sphinx Autodoc Plugin
+---------------------
+
+Dagstd includes a Sphinx autodoc plugin that can be used to generate
+documentation for Dagster ops. To use the autodoc plugin, add the following
+to your ``conf.py`` file:
+
+    .. code-block:: python
+
+        extensions = [
+            ...
+            'dagstd.sphinx.parser',
+        ]
+
+By default, this will prefix all op documentation with ``(op)``. To change
+this, add the following to your ``conf.py`` file:
+
+    .. code-block:: python
+
+        dagstd_op_prefix = 'My Op'
 
 Documentation
 -------------

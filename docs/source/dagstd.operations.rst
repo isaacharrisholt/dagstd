@@ -12,11 +12,6 @@ dagstd.operations.maths module
    :undoc-members:
    :show-inheritance:
 
-    .. autofunction:: dagstd.operations.maths.add
-    .. autofunction:: dagstd.operations.maths.subtract
-    .. autofunction:: dagstd.operations.maths.multiply
-    .. autofunction:: dagstd.operations.maths.divide
-
 dagstd.operations.strings module
 --------------------------------
 
@@ -24,8 +19,6 @@ dagstd.operations.strings module
    :members:
    :undoc-members:
    :show-inheritance:
-
-    .. autofunction:: dagstd.operations.strings.fmt
 
 Module contents
 ---------------
