@@ -4,3 +4,7 @@ from .maths import (
     multiply,
     divide,
 )
+
+from .strings import (
+    fmt,
+)
