@@ -1,7 +1,9 @@
 """
-Constant.py contains a Constant function that acts as an op that returns
-whatever value is passed to it on creation.
+constant.py contains a Constant function that acts as an op that returns
+whatever value is passed to it.
 """
+import re
+
 from typing import Any
 
 from dagster import op
@@ -15,9 +17,10 @@ def Constant(value: Any) -> Any:
 
     The name of the op is the value passed to it.
     """
+    r = re.compile(r'\W')
 
     @op(
-        name=repr(value).replace(' ', '_').replace("'", ''),
+        name=r.sub('', repr(value).replace(' ', '_')),
         description=f'Returns {repr(value)}',
     )
     def constant_op():

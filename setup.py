@@ -15,7 +15,9 @@ setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        'dagster>=0.14.17',
+    ],
     keywords=['dagster', 'data processing'],
     license='GNU GPLv3',
     classifiers=[
