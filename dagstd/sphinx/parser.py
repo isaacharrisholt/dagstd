@@ -1,4 +1,5 @@
 from inspect import signature
+from typing import Any
 
 from sphinx.domains.python import PyFunction
 from sphinx.ext.autodoc import FunctionDocumenter
@@ -16,12 +17,14 @@ class OpDocumenter(FunctionDocumenter):
     member_order = 11
 
     @classmethod
+    # pylint: disable-next=unused-argument
     def can_document_member(cls, member, membername, isattr, parent):
         return bool(
             isinstance(member, OpDefinition) and getattr(member, '__wrapped__')
         )
 
-    def format_args(self):
+    # pylint: disable-next=unused-argument
+    def format_args(self, **kwargs: Any):
         wrapped = getattr(self.object, '__wrapped__', None)
         if wrapped is not None:
             sig = signature(wrapped)
@@ -43,9 +46,11 @@ class OpDocumenter(FunctionDocumenter):
         return super().check_module()
 
 
+# pylint: disable-next=too-few-public-methods
 class OpDirective(PyFunction):
     """Sphinx op directive."""
 
+    # pylint: disable-next=unused-argument
     def get_signature_prefix(self, sig):
         return self.env.config.dagster_op_prefix
 
