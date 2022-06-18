@@ -153,7 +153,7 @@ Install Dagstd with pip:
 Dependencies
 ------------
 
-- `dagster <https://pypi.org/project/dagster/>`_
+- `dagster >= 0.14.17 <https://pypi.org/project/dagster/>`_
 
 Contribute
 ----------
