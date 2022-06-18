@@ -1,0 +1,9 @@
+dagit==0.14.17
+dagster==0.14.17
+pre-commit==2.19.0
+pylint==2.14.3
+pytest==7.1.2
+Sphinx==5.0.2
+sphinx-rtd-theme==1.0.0
+twine==4.0.1
+wheel==0.37.1
