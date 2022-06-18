@@ -21,6 +21,11 @@ dagstd.env module
    :undoc-members:
    :show-inheritance:
 
+    .. autofunction:: dagstd.env.or_none
+    .. autofunction:: dagstd.env.or_empty
+    .. autofunction:: dagstd.env.or_default
+    .. autofunction:: dagstd.env.or_raise
+
 dagstd.utils module
 -------------------
 
@@ -28,6 +33,8 @@ dagstd.utils module
    :members:
    :undoc-members:
    :show-inheritance:
+
+    .. autofunction:: dagstd.utils.no_op
 
 Module contents
 ---------------

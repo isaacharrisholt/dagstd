@@ -118,7 +118,8 @@ be avoided when using Dagstd.
 Documentation
 -------------
 
-Documentation can be found at https://dagstd.readthedocs.io/en/latest/
+Documentation can be found at
+https://dagstd.readthedocs.io/en/latest/readme.html.
 
 Installation
 ------------
