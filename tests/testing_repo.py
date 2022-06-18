@@ -1,3 +1,12 @@
+"""
+testing_repo.py contains a test Dagster repo for testing the dagstd package.
+
+These tests are not automated, but feel free to use this as a starting point
+for having a play with the package!
+
+Just make sure the requirements are installed and run `dagit -f
+testing_repo.py`
+"""
 from dagster import op, job
 
 from dagstd.constants import Constant

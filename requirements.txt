@@ -1,2 +1,5 @@
+dagit==0.14.17
 dagster==0.14.17
 pytest==7.1.2
+Sphinx==5.0.2
+sphinx-rtd-theme==1.0.0
