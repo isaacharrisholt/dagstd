@@ -135,7 +135,7 @@ Dependencies
 - `dagster <https://pypi.org/project/dagster/>`_
 
 Contribute
----------
+----------
 
 I'm always looking for more ideas to add to Dagstd. If you have an idea, please
 open an issue or pull request, or message me on GitHub.
