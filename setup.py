@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 DESCRIPTION = 'Dagstd'
 with open('README.rst', 'r', encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
@@ -13,7 +13,7 @@ setup(
     author_email="isaac@harris-holt.com",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
     packages=find_packages(),
     install_requires=[
         'dagster>=0.14.17',
