@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 DESCRIPTION = 'Dagstd'
 with open('README.rst', 'r', encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
