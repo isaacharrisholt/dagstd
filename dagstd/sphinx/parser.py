@@ -1,5 +1,6 @@
 from inspect import signature
 from typing import Any
+from docutils import nodes
 
 from sphinx.domains.python import PyFunction
 from sphinx.ext.autodoc import FunctionDocumenter
@@ -52,7 +53,7 @@ class OpDirective(PyFunction):
 
     # pylint: disable-next=unused-argument
     def get_signature_prefix(self, sig):
-        return self.env.config.dagster_op_prefix
+        return return [nodes.Text(self.env.config.dagster_op_prefix)]
 
 
 def setup(app):
